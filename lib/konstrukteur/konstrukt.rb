@@ -42,7 +42,7 @@ module Konstrukteur
       elsif obj[:variable] && obj[:method] && obj[:value]
         Konstrukteur::Expression.new(obj, unit: @unit)
       else
-        "don't know what to do"
+        raise "don't know what to do"
       end
     end
   end
